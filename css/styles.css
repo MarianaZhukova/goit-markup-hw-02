@@ -1,7 +1,16 @@
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --complementary-color: #757575;
+  --background-color: #f5f4fa;
+  --footer-color: #2f303a;
+}
 body {
-  background-color: #ffffff;
-  color: #757575;
+  background-color: var(--title-text-color);
+  color: var(--complementary-color);
   font-family: roboto, sans-serif;
+  font-weight: 400;
 }
 ul {
   list-style: none;
@@ -11,7 +20,7 @@ ul {
 /* белый #FFFFFF */
 /* акцент #2196F3 */
 .logo {
-  color: #2196f3;
+  color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -21,14 +30,14 @@ ul {
   letter-spacing: 0.03em;
 }
 .logo-color {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .logo-footer {
-  color: #ffffff;
+  color: var(--title-text-color);
 }
 /* Site nav */
 .link {
-  color: #212121;
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
@@ -37,26 +46,25 @@ ul {
   letter-spacing: 0.02em;
 }
 .link:hover {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .link-contact {
-  color: #757575;
+  color: var(--complementary-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
-  font-letter: 2%;
-  text-decoration: none;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .link-contact:hover {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* Герой */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--footer-color);
 }
 .hero-title {
-  color: #ffffff;
+  color: var(--title-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -64,10 +72,11 @@ ul {
   text-decoration: none;
   letter-spacing: 0.06em;
   text-align: center;
+  text-transform: uppercase;
 }
 .button-type {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--title-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   width: 200px;
@@ -75,10 +84,10 @@ ul {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
-  font-letter: 6%;
+  letter-spacing: 0.06em;
 }
 .button-type:hover {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 /* Основная информация */
@@ -88,7 +97,7 @@ ul {
 .activity-title,
 .team-title,
 .person {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .features-link {
   font-weight: 700;
@@ -99,28 +108,24 @@ ul {
   text-transform: uppercase;
 }
 .text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  font-letter: 3%;
   letter-spacing: 0.03em;
 }
 .activity-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.71;
-  font-letter: 3%;
   letter-spacing: 0.03em;
   text-align: center;
 }
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--background-color);
 }
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.71;
-  font-letter: 3%;
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -128,73 +133,67 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
-  font-letter: 3%;
   letter-spacing: 0.03em;
 }
 .team-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
-  font-letter: 3%;
   letter-spacing: 0.03em;
 }
 /* footer */
 .adress {
-  color: #ffffff;
-  font-weight: 400;
+  color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.71;
-  font-letter: 3%;
   letter-spacing: 0.03em;
   font-style: normal;
 }
 .mail,
 .phone {
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  font-letter: 3%;
   letter-spacing: 0.03em;
   font-style: normal;
   text-decoration: none;
 }
 .mail:hover {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .phone:hover {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-color);
 }
 /* Портфолио */
 .button {
-  background-color: #f5f4fa;
-  color: #212121;
+  font-family: Roboto, sans-serif;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
 }
 .button:hover {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--title-text-color);
 }
 .button:focus {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .content-tittle {
-  color: #212121;
+  color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  font-letter: 6%;
   letter-spacing: 0.06em;
   text-decoration: none;
 }
 .content-text {
-  color: #757575;
-  font-weight: 400;
+  color: var(--complementary-color);
   font-size: 16px;
   line-height: 1.87;
-  font-letter: 3%;
   letter-spacing: 0.03em;
 }
